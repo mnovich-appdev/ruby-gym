@@ -8,3 +8,17 @@
 # For example, given a 11 and 13 as input, the 11 should be 'converted' into a 1 so the total sum will be 14.
 
 p "Enter two number separated by spaces:"
+
+user_numbers = gets.chomp.split(" ")
+
+result = 0
+
+if
+  user_numbers.index("11") == nil && user_numbers[0].to_i + user_numbers[1].to_i <= 21
+  p user_numbers[0].to_i + user_numbers[1].to_i
+elsif
+  user_numbers.index("11") != nil && user_numbers[0].to_i + user_numbers[1].to_i - 10 <= 21
+  p   user_numbers[0].to_i + user_numbers[1].to_i - 10
+else
+  p result
+end
