@@ -14,3 +14,4 @@
 #  "Number of digits in the string is: 4"
 
 p "Enter a sentence:"
+sentence = gets.chomp.split("")
