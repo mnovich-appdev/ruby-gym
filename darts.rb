@@ -29,3 +29,21 @@
 #     (x-j)^2 + (y-k)^2 = r^2
 
 p "Enter X,Y coordinates in the format 'X,Y'"
+
+user_coordinates = gets.chomp.split(",")
+
+user_x_coordinate = user_coordinates.first.to_f
+user_y_coordinate = user_coordinates.last.to_f
+
+if 
+  (user_x_coordinate).abs + (user_y_coordinate).abs <= 1
+  p "10 points"
+elsif
+  (user_x_coordinate).abs + (user_y_coordinate).abs <= 5
+  p "5 points"
+elsif
+  (user_x_coordinate).abs + (user_y_coordinate).abs <= 10
+  p "1 points"
+else
+  p "0 points"
+end
