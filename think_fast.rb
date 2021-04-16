@@ -33,3 +33,34 @@ p some_random_input
 
 # Write your code below
 
+
+if 
+  some_random_input.class == String
+  p some_random_input.downcase
+elsif
+  some_random_input.class == Time
+  p some_random_input.strftime("%A").downcase.to_s
+elsif
+  some_random_input.class == Symbol
+  p some_random_input.downcase
+elsif
+  some_random_input == nil
+  p "no object provided"
+elsif
+  some_random_input == true
+  p "you may pass"
+elsif
+  some_random_input == false
+  p "you may not pass"
+elsif
+  some_random_input.class == Hash
+  key_array = Array.new
+  key_array.push(some_random_input.keys)
+  p key_array
+elsif
+  some_random_input.odd? == true
+  p "#{some_random_input} is odd"
+elsif 
+  some_random_input.even? == true
+  p "#{some_random_input} is even"
+end
